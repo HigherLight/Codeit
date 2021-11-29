@@ -1,0 +1,81 @@
+:root {
+    font-family: "Open Sans";
+    font-size: 20px;
+
+}
+
+body {
+    background-image: linear-gradient(45deg, pink, blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes fade {
+    0% {    background: linear-gradient(45deg, rgb(199, 80, 193),rgb(98, 0, 255));    }
+    100% {    background: linear-gradient(45deg, rgb(145, 80, 199),rgb(89, 0, 255));}
+}
+
+codeblock {
+    color: lightgray;
+    font-family: "Jetbrains Mono";
+    white-space: pre;
+    font-size: 1.25rem;
+    background: rgb(56, 61, 66);
+    padding: 1rem 5rem 1rem 5rem;
+    border: 6px solid white;
+    border-radius: 6px;
+    filter: drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.157));
+}
+
+.code1 {
+    color: white;
+    font-family: "Open Sans";
+    position: absolute;
+    transform: translateY(-14rem);
+}
+
+.highlight {
+    color: #60b5ff;
+}
+
+.type {
+    color: #dd93ff;
+}
+
+.func {
+    color: #60b5ff;
+}
+
+.obj {
+    color: #ffd375;
+}
+
+
+.infohover {
+    text-decoration: underline dotted rgba(255, 238, 81, 0.493);
+    background: none;
+    transition: text-decoration 0.5s;
+    transition: background 0.2s;
+}
+
+.infohover:hover {
+    text-decoration: underline dotted rgba(255, 238, 81);
+    background:rgba(0, 110, 255, 0.15);
+    cursor: pointer;
+    transition: text-decoration 0.5s;
+    transition: background 0.2s;
+}
+
+#tooltip {
+    position: absolute;
+    font-family: "Open Sans";
+    font-size: 0.75rem;
+    color: white;
+    background: rgba(105, 90, 205, 0.842);
+    transform: translate(-5rem,-7.1rem);
+    white-space: pre-wrap;
+    opacity: 0;
+    transition: opacity .15s ease-out;
+    padding: 10px;
+}
